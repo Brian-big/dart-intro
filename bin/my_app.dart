@@ -1,6 +1,7 @@
 import 'package:my_app/my_app.dart' as my_app;
 import 'package:my_app/bicycle.dart';
 import 'package:my_app/rectangle.dart';
+import 'package:my_app/shape.dart';
 
 void main(List<String> arguments) {
   print('Hello world: ${my_app.calculate()}!');
@@ -18,4 +19,16 @@ void main(List<String> arguments) {
   print(rectangle);
   final shape2 = Rectangle(width: 2, length: 43);
   print(shape2);
+
+  print('***********Factories( sth like java abstract classes )**************');
+
+  // one way to initialize using factory pattern
+  // final circle = shapeFactory('circle');
+  // final square = shapeFactory('square');
+
+  final circle = Shape('circle');
+  final square = Shape('square');
+
+  print(circle.area);
+  print(square.area);
 }
