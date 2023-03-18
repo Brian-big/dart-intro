@@ -31,3 +31,8 @@ class Square implements Shape {
 //   if (type == 'square') return Square(5);
 //   throw 'Can\'t create type';
 // }
+
+class CircleMock implements Circle {
+  num area = 0;
+  num radius = 0;
+}

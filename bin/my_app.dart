@@ -31,4 +31,8 @@ void main(List<String> arguments) {
 
   print(circle.area);
   print(square.area);
+
+  final c2 = CircleMock();
+  c2.radius = 3.5;
+  print(c2.area);
 }
