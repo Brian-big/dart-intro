@@ -11,14 +11,14 @@ class Bicycle {
   get speed => _speed;
 
   void applyBrake(int decrement) {
-    print('reducing speed by ' + decrement.toString() + ' ...');
+    print('reducing speed by $decrement ...');
     _speed -= decrement;
-    print('speed decreased to ' + _speed.toString());
+    print('speed decreased to $_speed');
   }
 
   void speedUp(int increment) {
-    print('increasing speed by ' + increment.toString() + ' ...');
+    print('increasing speed by ${increment.toString()} ...');
     _speed += increment;
-    print('speed increased to ' + increment.toString());
+    print('speed increased to $increment');
   }
 }
