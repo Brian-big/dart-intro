@@ -3,9 +3,10 @@ String createOrderMessage() {
   return 'your order is $order';
 }
 
-Future<String> fetchUserOrder() => 
-    Future.delayed(const Duration(seconds: 39), () => 'Large latte');
+Future<void> fetchUserOrder() =>
+    Future.delayed(const Duration(seconds: 3), () => print('Large latte'));
 
 void main(List<String> args) {
-  print(createOrderMessage());
+  fetchUserOrder();
+  print('fetching user orders');
 }
